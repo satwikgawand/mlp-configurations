@@ -48,13 +48,17 @@ Read more on Keras Documentation: [https://keras.io/api/layers/activations/](htt
 
 These activation functions were used on all the layers except for the output layer which exclusively uses the softmax activation function.
 
-| 4 | softsign    | 0.41 | 0.85 | 0.37 | 0.86  | 0.42 | 0.85 | 54.44 |
-|---|-------------|------|------|------|-------|------|------|-------|
-| 5 | softplus    | 0.43 | 0.84 | 0.41 | 0.86  | 0.44 | 0.84 | 59.7  |
-| 6 | softmax     | 0.39 | 0.84 | 0.37 | 0.86  | 0.4  | 0.84 | 55.2  |
-| 1 | elu         | 0.7  | 0.5  | 0.7  | 0.49  | 0.7  | 0.5  | 57.1  |
-| 2 | selu        | 0.92 | 0.5  | 0.94 | 0.49  | 0.93 | 0.5  | 57.05 |
-| 3 | tanh        | 0.7  | 0.5  | 0.7  | 0.49  | 0.7  | 0.5  | 56.22 |
-| 7 | sigmoid     | 0.69 | 0.5  | 0.69 | 0.49  | 0.69 | 0.5  | 50.47 |
-| 8 | relu        | 0.69 | 0.5  | 0.69 | 0.49  | 0.69 | 0.5  | 58.03 |
-| 0 | exponential | 0.5  | 0.51 | 0.5  | 56.83 |      |      |       |
+ Index | Activation Function | Training Loss | Training Accuracy | Validation Loss | Validation Accuracy | Test Loss | Test Accuracy | Time (s) 
+-------|---------------------|---------------|-------------------|-----------------|---------------------|-----------|---------------|----------
+ 6     | softmax             | 0.43          | 0.84              | 0.41            | 0.86                | 0.44      | 0.84          | 60.46    
+ 4     | softsign            | 0.39          | 0.84              | 0.35            | 0.85                | 0.39      | 0.83          | 63.49    
+ 8     | relu                | 0.45          | 0.83              | 0.42            | 0.84                | 0.46      | 0.82          | 57.05    
+ 1     | elu                 | 0.7           | 0.5               | 0.7             | 0.49                | 0.7       | 0.5           | 60.42    
+ 2     | selu                | 0.92          | 0.5               | 0.94            | 0.49                | 0.92      | 0.5           | 62.12    
+ 3     | tanh                | 0.7           | 0.5               | 0.7             | 0.49                | 0.7       | 0.5           | 55.92    
+ 5     | softplus            | 0.69          | 0.5               | 0.69            | 0.49                | 0.69      | 0.5           | 65.51    
+ 0     | exponential         | NaN           | 0.5               | NaN             | 0.51                | NaN       | 0.5           | 55.93    
+ 7     | sigmoid             | 0.69          | 0.5               | 0.69            | 0.51                | 0.69      | 0.5           | 84.1     
+  
+
+We can see from the above table that using __softmax__ as the activation function for the input and hidden layers 
