@@ -8,13 +8,13 @@ This repository is a collection of experimental Python notebooks where each one 
 
 The experiment utilizes a baseline Sequential Multi-Layer Perceptron. The parameters being tested are:
 1. [Activation Functions](#activation-functions)
-2. batch size
-3. epochs
-4. kernel initializers
-5. learning rate
-6. loss functions
-7. network architectures
-8. optimizers
+2. [Batch Size](#batch-size)
+3. [Epochs](#epochs)
+4. [Kernel Initializers](#kernel-initializers)
+5. [Learning Rate](#learning-rate)
+6. [Loss Functions](#loss-functions)
+7. [Network Architectures](#network-architectures)
+8. [Optimizers](#optimizers)
 
 ---
 
@@ -81,6 +81,8 @@ We can observe from the table above that using __softmax__ as the activation fun
 ![loss](activation_functions/figures/loss.png)
 ![accuracy](activation_functions/figures/accuracy.png)
 
+>[Back to Top](#introduction)
+
 ---
 
 ## Batch Size
@@ -120,6 +122,8 @@ We can observe from the table above that a bigger batch size led to lower loss a
 ![loss](batch_size/figures/loss.png)
 ![accuracy](batch_size/figures/accuracy.png)
 
+>[Back to Top](#introduction)
+
 ---
 
 ## Epochs
@@ -152,6 +156,8 @@ It is interesting to note that we get the best performance from 50 epochs follow
 
 ![loss](epochs/figures/loss.png)
 ![accuracy](epochs/figures/accuracy.png)
+
+>[Back to Top](#introduction)
 
 ---
 
@@ -215,6 +221,8 @@ Among all the kernel initializers, there are few that demonstrate a good perform
 ![loss](kernel_initializers/figures/loss.png)
 ![accuracy](kernel_initializers/figures/accuracy.png)
 
+>[Back to Top](#introduction)
+
 ---
 
 ## Learning Rate
@@ -253,6 +261,8 @@ We can observe from the table that a smaller learning rate generally leads to a 
 
 ![loss](learning_rate/figures/loss.png)
 ![accuracy](learning_rate/figures/accuracy.png)
+
+>[Back to Top](#introduction)
 
 ---
 
@@ -300,6 +310,8 @@ We can observe from the table that the accuracy is similar across all the loss f
 ![loss](loss_functions/figures/loss.png)
 ![accuracy](loss_functions/figures/accuracy.png)
 
+>[Back to Top](#introduction)
+
 ---
 
 ## Network Architectures
@@ -343,6 +355,8 @@ It is a popular misconception that the complexity of a model is proportional to 
 
 ![loss](network_architectures/figures/loss.png)
 ![accuracy](network_architectures/figures/accuracy.png)
+
+>[Back to Top](#introduction)
 
 ---
 
@@ -396,5 +410,7 @@ Adamax demonstrates the best performance followed by Ftrl, Adadelta and Adagrad;
 
 ![loss](optimizers/figures/loss.png)
 ![accuracy](optimizers/figures/accuracy.png)
+
+>[Back to Top](#introduction)
 
 ---
